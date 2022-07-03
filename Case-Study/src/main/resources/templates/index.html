@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.orf">
+    <style>
+        body {
+          background-image: url('../static/ecommerce-welcome1.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+        }
+        h1 {
+        font-size: 85px;
+        text-align: center;
+           }
+           .button {
+            padding: 25px 50px 25px 50px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+.bt{
+padding-top:10%;
+padding-left:45%;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+        </style>
+        <body>
+            <h1> welcome </h1>
+            <div class="bt">
+            <a th:href="@{Home}">
+            <button class="button">Start</button>
+            </div>
+        </body>
+</html>
